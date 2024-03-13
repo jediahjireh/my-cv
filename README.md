@@ -28,6 +28,12 @@ After installing this project, you can navigate through the webpage by following
 3.	You can navigate through the sections using the menu bar or scroll down to view the content.
 4.	If you have any questions or would like to connect, my contact details are provided on the homepage.
 
+### Screenshots
+Below is a screenshot of this project in action:
+
+![Screenshot 1](/screenshots/screenshot1.png)
+*Caption: Jediah’s Online CV Homepage.*
+
 ## Credits
 
 This project was created and maintained by [Jediah Jireh Naicker](https://github.com/jediahjireh).
