@@ -1,0 +1,209 @@
+<!-- referenced HyperionDev's "index.html" file in the "11-001 Your First Computer Program" folder
+    for code structure on how to link this html file to a javacript file -->
+<!doctype html>
+
+<html lang="en"> <!-- indicates language of file - English -->
+
+<head>
+    <!-- referenced HyperionDev's YouTube task video (https://youtu.be/39SzSGJ09u8?si=hU-iMWieIBfwhgHK)
+        for HTML UNICODE (encoding system) so that special characters are defined and can output correctly -->
+    <meta charset="UTF-8">
+    <title>
+        <Jediah's Online CV>
+    </title>
+
+    <!-- link to index.css file -->
+    <link rel="stylesheet" href="index.css" />
+
+</head>
+
+<!-- referenced HyperionDev's "05-002-2 HTML Overview" pdf
+    source referenced for guidance on HTML structure and syntax -->
+<!-- referenced HyperionDev's "05-005-1 CSS Overview" pdf
+    source referenced for guidance on CSS structure and syntax -->
+
+<body>
+    <header>
+        <!-- contact information -->
+        <h5 id="contactInfo"><b>CONTACT INFORMATION</b><br>
+            Mobile: +27 82 636 3910<br>
+            Email: jediahnaicker@gmail.com<br>
+            <nav>
+                <a href="https://www.linkedin.com/in/jediahnaicker">View my LinkedIn profile</a>
+            </nav>
+        </h5>
+    </header>
+
+    <!-- profile picture -->
+    <div>
+        <img id="profilePicture" src="images/profile-picture.JPG" alt="Profile Picture" width="130px" height="130px" />
+        <!-- name -->
+        <h1 id="myName" class="centreText"><b>Jediah Jireh Naicker</b></h1>
+        <h5 id="jobTitle" class="centreText">Aspiring Full Stack Web Developer & Software Engineer</h5>
+        <br><br>
+        <hr>
+    </div>
+
+    <!-- referenced https://www.geeksforgeeks.org/html-align-attribute/
+        website referenced for guidance text alignment -->
+    <!-- search form -->
+    <header>
+        <!-- GET form -->
+        <form id="searchForm" action="/index.html" method="GET">
+            <input type="search" id="profileSearch" name="q">
+            <input type="submit" value="Search" class="enterButton">
+        </form>
+    </header>
+    <!-- cv content -->
+    <article>
+        <!-- who i am, my passions, what motivates me and what it is that i would most like to do -->
+        <h2>About</h2>
+        <p>
+            <b>Lifelong Learner:</b>
+            <br>
+            From an early age, I have immersed myself into exploring the world of technology and the endless
+            possibilities
+            that it has to offer. It all started with a fondness for problem-solving and expanded into a deep-rooted
+            passion,
+            ignited by the potential of technology to effect meaningful change in society.
+            <br><br>
+            The realm of technology is ever-evolving and I'm committed to staying at the forefront of advancements. Such
+            as
+            the journey
+            of life, the journey of someone in the tech industry is anchored in continuous learning and development,
+            which I
+            embrace.
+            It is an integral part of my growth as a developer and I welcome challenges that push me to constantly
+            refine my
+            craft.
+            <br><br>
+            <b>Debugging the World:</b>
+            <br>
+            The intersection of technology and social impact can drive meaningful change. Beyond building cutting-edge
+            applications,
+            my true passion lies in using my skills to combat social injustice. My primary goal is to leverage my skills
+            in
+            order to make
+            a tangible difference in the world. My dream is to contribute my abilities to the fight against the heinous
+            crime of human trafficking,
+            using technology to empower anti-trafficking organisations and to aid them in the mission to rescue and
+            support
+            survivors.
+            <br><br>
+            <b>Vision for the Future:</b>
+            <br>
+            Looking ahead, my vision is to establish myself as a proficient software engineer/web developer in the
+            industry.
+            Whether it's creating innovative web solutions, optimising user experiences or developing scalable
+            applications
+            and platforms, I'm driven to bring about meaningful change. Technology, when wielded responsibly, can be a
+            catalyst for social
+            progress. It can serve as a powerful tool to empower the vulnerable, raise awareness and drive sustainable
+            solutions.
+        </p>
+
+        <!-- Education -->
+        <h2>Education</h2>
+        <h3>HyperionDev</h3>
+        <p>
+            <b>NQF Level 5, Full Stack Web & Software Engineering</b>
+            <br>
+            <i>(January 2024 - July 2024)</i>
+            <br><br>
+            I am currently enrolled into an immersive Software Engineering and Full Stack Web Development bootcamp at
+            HyperionDev.
+            Since multilingual abilities always enhance a resumé, let me mention the language structures that I will be
+            fluent in by June
+            2024:
+            Python, CSS, SCSS, JavaScript, Java, PHP, advanced HTML, Git and GitHub version control, as well as the MERN
+            full stack
+            (MongoDB, Express, React.js, and Node.js). I have also had experience with Delphi 2010 during my high school
+            years.
+        </p>
+
+        <h2>Skills</h2>
+        <!-- unordered list -->
+        <ul>
+            <!-- list skills -->
+            <li>Programming</li>
+            <li>English Writing</li>
+            <li>Research Skills</li>
+            <li>Analytical Skills</li>
+            <li>Presentations</li>
+            <li>Creativity and Innovation</li>
+            <li>Challenge Driven</li>
+            <li>Problem Solving</li>
+        </ul>
+
+    </article>
+
+    <aside>
+        <!-- Courses -->
+        <h2>Courses</h2>
+        <h3>Polaris's Human Trafficking 101 Training</h3>
+
+        <!-- Languages -->
+        <h2>Languages</h2>
+        <h3>Afrikaans</h3>
+        <p>
+            Limited working proficiency
+        </p>
+        <h3>English</h3>
+        <p>
+            Native proficiency
+        </p>
+        <!-- experience -->
+        <h2>Organisations</h2>
+        <h3>D&S Family Centre</h3>
+        <p>
+            Media Team · Dec 2020 - Present
+        </p>
+        <!-- further work experience will not be elaborated on due to it being limited in an official/professional capacity -->
+
+        <h2>Causes</h2>
+        <p class="centreText">
+            Economic Empowerment • Human Rights • Technology • Tech Against Trafficking • Social Services
+        </p>
+        <hr>
+        <br>
+    </aside>
+
+    <!-- POST form -->
+    <div id="contactForm">
+        <!-- use "&nbsp" for tabs (as referenced from example.html) -->
+        <form action="/index.html" method="POST">
+            <label>CONTACT FORM</label><br><br>
+            <label>First name: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="text"><br><br>
+            <label>Surname: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="text"><br><br>
+            <label>Email address: &nbsp</label>
+            <input type="text"><br><br>
+            <label>Message:</label><br><br>
+            <input type="text" style="width: 330px;"><br><br>
+            <input type="submit" value="submit form" id="submitButton" class="enterButton">
+        </form>
+    </div>
+
+    <!-- return to top of webpage -->
+    <nav>
+        <br>
+        <hr><br>
+        <a href="#myName">Back to top</a>
+    </nav>
+
+    <!-- webpage ownership -->
+    <footer>
+        <p>
+            &copy; 2024 <i>Jediah Jireh Naicker</i><br>
+            All rights reserved. <br>
+            Information subject to change without webpage being updated.
+            <br><br>
+            Referenced
+            <a href="https://www.linkedin.com">LinkedIn</a>
+            for guidance on online CV webpage structure and content.
+        </p>
+    </footer>
+</body>
+
+</html>

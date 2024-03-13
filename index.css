@@ -1,0 +1,107 @@
+/* linked to index.html file */
+
+/* referenced HyperionDev's "05-005-1 CSS Overview" pdf
+    source referenced for guidance on CSS structure and syntax */
+
+/* entire form */
+body {
+    font-family: sans-serif;
+    background-color: #374C5B;
+    color: white;
+    border: 10px solid lightgoldenrodyellow;
+    padding: 20px;
+    margin: 15px;
+}
+
+/* centre text on webpage */
+.centreText {
+    text-align: center;
+}
+
+/* name of person */
+#myName {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+/* job title */
+#jobTitle {
+    font-weight: lighter;
+}
+
+/* contact information in right corner and in-line with name and image */
+#contactInfo {
+    font-weight: lighter;
+    float: inline-end;
+}
+
+/* profile picture in left corner - only image on webpage */
+#profilePicture {
+    float: inline-start;
+    border: 2px solid lightgoldenrodyellow;
+}
+
+/* list bullet style */
+li li {
+    list-style-type: circle;
+}
+
+/* description headings */
+h2 {
+    color: lightgoldenrodyellow;
+    outline: auto;
+    outline-color: lightgoldenrodyellow;
+    text-align: center;
+    text-transform: lowercase;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+/* links */
+a {
+    color: lightblue;
+    font-weight: bolder;
+}
+
+/* change link colour when hovered over */
+a:hover {
+    color: lightcyan;
+}
+
+/* GET form alignment */
+#searchForm {
+    text-align: right;
+}
+
+/* personalise contact form */
+#contactForm {
+    border: 2px solid lightgoldenrodyellow;
+    padding: 10px;
+    background-color: #58375b;
+    color: lightgoldenrodyellow;
+    /* referenced https://www.w3.org/Style/Examples/007/center.en.html
+    website referenced for guidance on how to centre a block of text */
+    /* centre POST form */
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+}
+
+/* personalise submit button */
+#submitButton {
+    width: 340px;
+    height: 50px;
+    font-size: 30px;
+    font-stretch: condensed;
+    font-variant: small-caps;
+}
+
+/* change cursor onclick */
+.enterButton {
+    cursor: grab;
+}
+
+/* all rule-off lines */
+hr {
+    color: lightgoldenrodyellow;
+}
