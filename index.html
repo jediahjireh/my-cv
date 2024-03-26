@@ -1,53 +1,47 @@
-<!-- referenced HyperionDev's "index.html" file in the "11-001 Your First Computer Program" folder
-    for code structure on how to link this html file to a javacript file -->
 <!doctype html>
 
-<html lang="en"> <!-- indicates language of file - English -->
+<html lang="en">
 
 <head>
-    <!-- referenced HyperionDev's YouTube task video (https://youtu.be/39SzSGJ09u8?si=hU-iMWieIBfwhgHK)
-        for HTML UNICODE (encoding system) so that special characters are defined and can output correctly -->
     <meta charset="UTF-8">
     <title>
         <Jediah's Online CV>
     </title>
 
     <!-- link to index.css file -->
-    <link rel="stylesheet" href="index.css" />
-
+    <link rel="stylesheet" href="index.css">
 </head>
 
-<!-- referenced HyperionDev's "05-002-2 HTML Overview" pdf
-    source referenced for guidance on HTML structure and syntax -->
-<!-- referenced HyperionDev's "05-005-1 CSS Overview" pdf
-    source referenced for guidance on CSS structure and syntax -->
-
 <body>
+
     <header>
         <!-- contact information -->
-        <h5 id="contactInfo"><b>CONTACT INFORMATION</b><br>
-            Mobile: +27 82 636 3910<br>
-            Email: jediahnaicker@gmail.com<br>
-            <nav>
-                <a href="https://www.linkedin.com/in/jediahnaicker">View my LinkedIn profile</a>
-            </nav>
-        </h5>
-    </header>
+        <div id="contactInfo">
+            <h4>CONTACT INFORMATION</h4>
+            <h5>Mobile: +27 82 636 3910<br>
+                Email: jediahnaicker@gmail.com<br>
+            </h5>
+            <h6>
+                <a href="https://www.linkedin.com/in/jediahnaicker">LinkedIn</a> |
+                <a href="https://github.com/jediahjireh">GitHub</a> |
+                <a href="https://www.hyperiondev.com/portfolio/JN23110012577/">HyperionDev Porfolio</a>
+            </h6>
+        </div>
 
-    <!-- profile picture -->
-    <div>
-        <img id="profilePicture" src="images/profile-picture.JPG" alt="Profile Picture" width="130px" height="130px" />
+        <!-- profile picture -->
+        <img id="profilePicture" src="images/profile-picture.JPG" alt="Profile Picture" width="130" height="130">
         <!-- name -->
         <h1 id="myName" class="centreText"><b>Jediah Jireh Naicker</b></h1>
+        <!-- title -->
         <h5 id="jobTitle" class="centreText">Aspiring Full Stack Web Developer & Software Engineer</h5>
-        <br><br>
-        <hr>
-    </div>
+    </header>
 
-    <!-- referenced https://www.geeksforgeeks.org/html-align-attribute/
-        website referenced for guidance text alignment -->
+
+
     <!-- search form -->
     <header>
+        <br><br>
+        <hr><br>
         <!-- GET form -->
         <form id="searchForm" action="/index.html" method="GET">
             <input type="search" id="profileSearch" name="q">
@@ -106,19 +100,15 @@
         <h2>Education</h2>
         <h3>HyperionDev</h3>
         <p>
-            <b>NQF Level 5, Full Stack Web & Software Engineering</b>
+            <b>Full Stack Web Development & Software Engineering Bootcamp</b> · Jan - Jul 2024
             <br>
-            <i>(January 2024 - July 2024)</i>
+            Information Technology (Systems Development), NQF Level 5
             <br><br>
             I am currently enrolled into an immersive Software Engineering and Full Stack Web Development bootcamp at
-            HyperionDev.
-            Since multilingual abilities always enhance a resumé, let me mention the language structures that I will be
-            fluent in by June
-            2024:
-            Python, CSS, SCSS, JavaScript, Java, PHP, advanced HTML, Git and GitHub version control, as well as the MERN
-            full stack
-            (MongoDB, Express, React.js, and Node.js). I have also had experience with Delphi 2010 during my high school
-            years.
+            HyperionDev. Since multilingual abilities always enhance a resumé, let me mention some of the languages and
+            technologies that I will soon be fluent in: Python, CSS, SCSS, JavaScript, Java, PHP, advanced HTML, Git and
+            GitHub version control, as well as the MERN full stack (MongoDB, Express, React.js, and Node.js). I have
+            also had experience with Delphi 2010 during my high school years.
         </p>
 
         <h2>Skills</h2>
@@ -134,7 +124,6 @@
             <li>Challenge Driven</li>
             <li>Problem Solving</li>
         </ul>
-
     </article>
 
     <aside>
@@ -164,23 +153,20 @@
         <p class="centreText">
             Economic Empowerment • Human Rights • Technology • Tech Against Trafficking • Social Services
         </p>
-        <hr>
-        <br>
     </aside>
 
     <!-- POST form -->
-    <div id="contactForm">
-        <!-- use "&nbsp" for tabs (as referenced from example.html) -->
-        <form action="/index.html" method="POST">
-            <label>CONTACT FORM</label><br><br>
-            <label>First name: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
-            <input type="text"><br><br>
-            <label>Surname: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
-            <input type="text"><br><br>
-            <label>Email address: &nbsp</label>
-            <input type="text"><br><br>
-            <label>Message:</label><br><br>
-            <input type="text" style="width: 330px;"><br><br>
+    <div>
+        <h2 style="text-align: center;">CONTACT FORM</h2>
+        <form action="/index.html" method="POST" id="contactForm">
+            <label for="firstName">First name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" id="firstName"><br><br>
+            <label for="surname">Surname: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" id="surname"><br><br>
+            <label for="email">Email address: &nbsp;</label>
+            <input type="text" id="email"><br><br>
+            <label for="message">Message:</label><br><br>
+            <textarea style="width: 330px;" id="message"></textarea><br><br>
             <input type="submit" value="submit form" id="submitButton" class="enterButton">
         </form>
     </div>
@@ -198,11 +184,10 @@
             &copy; 2024 <i>Jediah Jireh Naicker</i><br>
             All rights reserved. <br>
             Information subject to change without webpage being updated.
-            <br><br>
-            Referenced
-            <a href="https://www.linkedin.com">LinkedIn</a>
-            for guidance on online CV webpage structure and content.
         </p>
+        <!-- take note :
+        Referenced <a href="https://www.linkedin.com">LinkedIn</a> for guidance on online CV webpage structure and content.
+        -->
     </footer>
 </body>
 
