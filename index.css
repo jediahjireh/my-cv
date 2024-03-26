@@ -1,8 +1,5 @@
 /* linked to index.html file */
 
-/* referenced HyperionDev's "05-005-1 CSS Overview" pdf
-    source referenced for guidance on CSS structure and syntax */
-
 /* entire form */
 body {
     font-family: sans-serif;
@@ -31,8 +28,31 @@ body {
 
 /* contact information in right corner and in-line with name and image */
 #contactInfo {
-    font-weight: lighter;
     float: inline-end;
+    border: 2px solid lightgoldenrodyellow;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* contact information heading formatting */
+#contactInfo h4 {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+/* email and phone number formatting */
+#contactInfo h5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: lighter;
+}
+
+/* links to external profiles formatting */
+#contactInfo h6 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: lighter;
 }
 
 /* profile picture in left corner - only image on webpage */
