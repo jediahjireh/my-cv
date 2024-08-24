@@ -11,12 +11,12 @@ Welcome to my CV website repository!
 
 ## Description
 
-This project showcases my professional profile and serves as an interactive online resume, providing an overview of my skills, experiences and accomplishments. I will be updating the website as I progress.
+This is my first Curriculum Vitae (CV) web application. I will be updating my website as I progress by developing new and improved portfolio repositories, rather than upgrading the content of this one. This project showcases my professional profile and serves as an interactive online résumé, providing an overview of my skills, experiences and accomplishments.
 
 ## Installation
 
 To run this website locally, follow these steps:
-1.	Clone the repository to your local machine using ‘git clone https://github.com/jediahjireh/MyCV.git’.
+1.	Clone the repository to your local machine using ‘git clone https://github.com/jediahjireh/my-cv.git’.
 2.	Navigate to the project directory in your terminal.
 3.	Open the index.html file in your web browser to view this project.
 
@@ -37,8 +37,5 @@ Below is a screenshot of this project in action:
 ## Credits
 
 This project was created and maintained by [Jediah Jireh Naicker](https://github.com/jediahjireh).
-
-#### License
-This project is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. You are welcome to share the website but may not use it for commercial purposes or modify it without permission.
 
 Feel free to reach out to me at [jediahnaicker@gmail.com](mailto:jediahnaicker@gmail.com) for any inquiries!
